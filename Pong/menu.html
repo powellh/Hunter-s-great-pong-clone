@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menu_text = new sjs.Text("MENU", 28, "blue");
+menu_text.centerH();
+var how_to_play = new sjs.Text("Move the left and right arrow keys to move the paddles on top \n and the up and down arrow keys to move the paddles on the sides", 25, "white");
+how_to_play.centerH();
+how_to_play.offset(0, 25);
+
+var buttonS = new sjs.Button("Start", function(){window.location="pong.html";});
+
+buttonS.center();
+
+
+var me = new sjs.Text("By Hunter Powell", 15, "green");
+me.center().offset(0, 25)
+
+} //end start
+</script>
+</head>
+<body onload="start()">
+<h1> Menu </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
